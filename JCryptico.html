@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCryptico</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00f;
+            font-family: "Arial Black", sans-serif;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .text-container {
+            display: flex;
+            gap: 10px;
+        }
+        .letter {
+            font-size: 6em;
+            font-weight: bold;
+            text-shadow: 0 0 25px #00f, 0 0 50px #0000ff;
+            animation: glow 1.5s infinite alternate, scaleEffect 2s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px #00f, 0 0 40px #0000ff;
+            }
+            to {
+                text-shadow: 0 0 30px #00f, 0 0 60px #0000ff;
+            }
+        }
+        @keyframes scaleEffect {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+        .mystery-text {
+            margin-top: 20px;
+            font-size: 1.5em;
+            text-shadow: 0 0 15px #00f;
+        }
+        .dot {
+            text-decoration: none;
+            color: #00f;
+        }
+        .clickable-dot {
+            text-decoration: none;
+            color: #00f;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .clickable-dot:hover {
+            color: #00f;
+            text-shadow: 0 0 10px #00f;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <span class="letter">J</span>
+        <span class="letter">C</span>
+        <span class="letter">R</span>
+        <span class="letter">Y</span>
+        <span class="letter">P</span>
+        <span class="letter">T</span>
+        <span class="letter">I</span>
+        <span class="letter">C</span>
+        <span class="letter">O</span>
+    </div>
+<p class="mystery-text">
+    "Lo visible es solo una pista<span style="display: inline-block; margin-right: -5px;">.</span>
+    <span style="display: inline-block; margin-right: -5px;">.</span>
+    <a href="https://www.instagram.com/jcryptico" target="_blank" class="clickable-dot" style="display: inline-block; margin-right: -5px;">.</a> lo esencial permanece oculto."
+</p>
+</body>
+</html>
+
